@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		2A323D011EBFC5F400C4E1E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A323D001EBFC5F400C4E1E1 /* AppDelegate.swift */; };
-		2A323D031EBFC5F400C4E1E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A323D021EBFC5F400C4E1E1 /* ViewController.swift */; };
-		2A323D061EBFC5F400C4E1E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A323D041EBFC5F400C4E1E1 /* Main.storyboard */; };
 		2A323D081EBFC5F400C4E1E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A323D071EBFC5F400C4E1E1 /* Assets.xcassets */; };
 		2A323D0B1EBFC5F400C4E1E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A323D091EBFC5F400C4E1E1 /* LaunchScreen.storyboard */; };
 		2A323D161EBFC5F400C4E1E1 /* QuemEuBeijeiOntemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A323D151EBFC5F400C4E1E1 /* QuemEuBeijeiOntemTests.swift */; };
+		2A323D231EBFC68600C4E1E1 /* QEBOContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A323D211EBFC68600C4E1E1 /* QEBOContactListViewController.swift */; };
+		2A323D241EBFC68600C4E1E1 /* QEBOContactListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A323D221EBFC68600C4E1E1 /* QEBOContactListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +28,14 @@
 /* Begin PBXFileReference section */
 		2A323CFD1EBFC5F400C4E1E1 /* QuemEuBeijeiOntem.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuemEuBeijeiOntem.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A323D001EBFC5F400C4E1E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2A323D021EBFC5F400C4E1E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2A323D051EBFC5F400C4E1E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A323D071EBFC5F400C4E1E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A323D0A1EBFC5F400C4E1E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A323D0C1EBFC5F400C4E1E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A323D111EBFC5F400C4E1E1 /* QuemEuBeijeiOntemTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuemEuBeijeiOntemTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A323D151EBFC5F400C4E1E1 /* QuemEuBeijeiOntemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuemEuBeijeiOntemTests.swift; sourceTree = "<group>"; };
 		2A323D171EBFC5F400C4E1E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A323D211EBFC68600C4E1E1 /* QEBOContactListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QEBOContactListViewController.swift; sourceTree = "<group>"; };
+		2A323D221EBFC68600C4E1E1 /* QEBOContactListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QEBOContactListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +77,8 @@
 		2A323CFF1EBFC5F400C4E1E1 /* QuemEuBeijeiOntem */ = {
 			isa = PBXGroup;
 			children = (
-				2A323D001EBFC5F400C4E1E1 /* AppDelegate.swift */,
-				2A323D021EBFC5F400C4E1E1 /* ViewController.swift */,
-				2A323D041EBFC5F400C4E1E1 /* Main.storyboard */,
-				2A323D071EBFC5F400C4E1E1 /* Assets.xcassets */,
-				2A323D091EBFC5F400C4E1E1 /* LaunchScreen.storyboard */,
-				2A323D0C1EBFC5F400C4E1E1 /* Info.plist */,
+				2A323D251EBFC68900C4E1E1 /* Contact List */,
+				2A323D201EBFC66300C4E1E1 /* Supporting Files */,
 			);
 			path = QuemEuBeijeiOntem;
 			sourceTree = "<group>";
@@ -94,6 +90,26 @@
 				2A323D171EBFC5F400C4E1E1 /* Info.plist */,
 			);
 			path = QuemEuBeijeiOntemTests;
+			sourceTree = "<group>";
+		};
+		2A323D201EBFC66300C4E1E1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2A323D001EBFC5F400C4E1E1 /* AppDelegate.swift */,
+				2A323D071EBFC5F400C4E1E1 /* Assets.xcassets */,
+				2A323D091EBFC5F400C4E1E1 /* LaunchScreen.storyboard */,
+				2A323D0C1EBFC5F400C4E1E1 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2A323D251EBFC68900C4E1E1 /* Contact List */ = {
+			isa = PBXGroup;
+			children = (
+				2A323D211EBFC68600C4E1E1 /* QEBOContactListViewController.swift */,
+				2A323D221EBFC68600C4E1E1 /* QEBOContactListViewController.xib */,
+			);
+			name = "Contact List";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +199,7 @@
 			files = (
 				2A323D0B1EBFC5F400C4E1E1 /* LaunchScreen.storyboard in Resources */,
 				2A323D081EBFC5F400C4E1E1 /* Assets.xcassets in Resources */,
-				2A323D061EBFC5F400C4E1E1 /* Main.storyboard in Resources */,
+				2A323D241EBFC68600C4E1E1 /* QEBOContactListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -201,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2A323D031EBFC5F400C4E1E1 /* ViewController.swift in Sources */,
+				2A323D231EBFC68600C4E1E1 /* QEBOContactListViewController.swift in Sources */,
 				2A323D011EBFC5F400C4E1E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,14 +241,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2A323D041EBFC5F400C4E1E1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2A323D051EBFC5F400C4E1E1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		2A323D091EBFC5F400C4E1E1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
