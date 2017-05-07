@@ -16,13 +16,18 @@ class QEBOContactCell: UITableViewCell {
     @IBOutlet weak var contactNameLabel: UILabel!
     
     func setContact(contact : APContact)  {
-        self.selectionStyle = UITableViewCellSelectionStyle.none
         if let name = contact.name {
             self.contactNameLabel.text = name.compositeName
         }
         if let recordDate = contact.recordDate {
             self.dateLabel.text =  timeAgoSince(recordDate.creationDate)
         }
+        let dao = QEBOContactDataAccessObject()
+        dao.contactPhoto(contact: contact) { (image) in
+            self.photoImageView.image = image
+        }
+
+        
     }
     
 }

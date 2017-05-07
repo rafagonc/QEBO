@@ -18,6 +18,8 @@
 		2A323D331EBFCC7A00C4E1E1 /* QEBOContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A323D311EBFCC7A00C4E1E1 /* QEBOContactCell.swift */; };
 		2A323D341EBFCC7A00C4E1E1 /* QEBOContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A323D321EBFCC7A00C4E1E1 /* QEBOContactCell.xib */; };
 		2A323D391EBFD28000C4E1E1 /* TimeAgo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A323D381EBFD28000C4E1E1 /* TimeAgo.swift */; };
+		2A323D3E1EBFEA8400C4E1E1 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A323D3C1EBFEA8400C4E1E1 /* Fabric.framework */; };
+		2A323D3F1EBFEA8400C4E1E1 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A323D3D1EBFEA8400C4E1E1 /* Crashlytics.framework */; };
 		4570E0B03A4D9829DD2EEF5A /* Pods_QuemEuBeijeiOntem.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B769B748471344475DE24903 /* Pods_QuemEuBeijeiOntem.framework */; };
 		610D07283AD34961AA9A96EA /* Pods_QuemEuBeijeiOntemTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F1A1F7158824F34094AB344 /* Pods_QuemEuBeijeiOntemTests.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +53,8 @@
 		2A323D311EBFCC7A00C4E1E1 /* QEBOContactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QEBOContactCell.swift; sourceTree = "<group>"; };
 		2A323D321EBFCC7A00C4E1E1 /* QEBOContactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QEBOContactCell.xib; sourceTree = "<group>"; };
 		2A323D381EBFD28000C4E1E1 /* TimeAgo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeAgo.swift; sourceTree = "<group>"; };
+		2A323D3C1EBFEA8400C4E1E1 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		2A323D3D1EBFEA8400C4E1E1 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		639F8092BB0B839A12A19326 /* Pods-QuemEuBeijeiOntem.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuemEuBeijeiOntem.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QuemEuBeijeiOntem/Pods-QuemEuBeijeiOntem.debug.xcconfig"; sourceTree = "<group>"; };
 		B769B748471344475DE24903 /* Pods_QuemEuBeijeiOntem.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QuemEuBeijeiOntem.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEF036EF25002526EDAA6352 /* Pods-QuemEuBeijeiOntem.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QuemEuBeijeiOntem.release.xcconfig"; path = "Pods/Target Support Files/Pods-QuemEuBeijeiOntem/Pods-QuemEuBeijeiOntem.release.xcconfig"; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4570E0B03A4D9829DD2EEF5A /* Pods_QuemEuBeijeiOntem.framework in Frameworks */,
+				2A323D3F1EBFEA8400C4E1E1 /* Crashlytics.framework in Frameworks */,
+				2A323D3E1EBFEA8400C4E1E1 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -184,6 +190,8 @@
 		9CAF2E05D067791A6C28C1D9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2A323D3C1EBFEA8400C4E1E1 /* Fabric.framework */,
+				2A323D3D1EBFEA8400C4E1E1 /* Crashlytics.framework */,
 				B769B748471344475DE24903 /* Pods_QuemEuBeijeiOntem.framework */,
 				1F1A1F7158824F34094AB344 /* Pods_QuemEuBeijeiOntemTests.framework */,
 			);
@@ -214,6 +222,7 @@
 				2A323CFB1EBFC5F400C4E1E1 /* Resources */,
 				F33ADA0314A1EE22FBECA65B /* [CP] Embed Pods Frameworks */,
 				8009C4CF0CE3B4A1BED3998B /* [CP] Copy Pods Resources */,
+				2A323D3B1EBFEA6E00C4E1E1 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -310,6 +319,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		2A323D3B1EBFEA6E00C4E1E1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run e325d08eb817b1970662ae07453b8f70233883b3 bea0f25583c9ae897b351fc7cdfc6374d21bffdff20a1e29ddb26d37ae2639e4";
+		};
 		3499231DBD83940DEEDBA2AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -548,6 +570,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8P5355PV9G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QuemEuBeijeiOntem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -566,6 +592,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 8P5355PV9G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = QuemEuBeijeiOntem/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

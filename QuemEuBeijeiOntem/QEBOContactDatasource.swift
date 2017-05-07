@@ -42,5 +42,15 @@ class QEBOContactDatasource : NSObject, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
     }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        if let phones = self.contacts[indexPath.row].phones {
+            if let phone  = phones.first {
+                if let number = phone.number {
+                    UIApplication.shared.openURL(NSURL(string:"https://www.facebook.com/search/top/?q=\(number)")! as URL)
+                }
+            }
+        }
+    }
     
 }
