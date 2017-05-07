@@ -1,12 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QEBOContactListViewController" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QEBOContactListViewController" customModule="QuemEuBeijeiOntem" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="lPy-nX-gdp" id="I8Z-Hl-NJ9"/>
+                <outlet property="tableView" destination="hWZ-zf-rbh" id="GFB-Qq-ICv"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +20,24 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="hWZ-zf-rbh">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="lPy-nX-gdp">
+                    <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="hWZ-zf-rbh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="E2o-qB-ARw"/>
+                <constraint firstAttribute="bottom" secondItem="hWZ-zf-rbh" secondAttribute="bottom" id="HPu-2B-j5z"/>
+                <constraint firstItem="lPy-nX-gdp" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="MUF-6t-QP1"/>
+                <constraint firstItem="lPy-nX-gdp" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="eDh-fR-HV6"/>
+                <constraint firstItem="hWZ-zf-rbh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="j2h-s3-p5O"/>
+                <constraint firstAttribute="trailing" secondItem="hWZ-zf-rbh" secondAttribute="trailing" id="oTH-IY-egH"/>
+            </constraints>
         </view>
     </objects>
 </document>

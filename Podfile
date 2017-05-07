@@ -2,10 +2,8 @@
 # platform :ios, '9.0'
 
 target 'QuemEuBeijeiOntem' do
-  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-
-  # Pods for QuemEuBeijeiOntem
+  pod 'APAddressBook/Swift'
 
   target 'QuemEuBeijeiOntemTests' do
     inherit! :search_paths
